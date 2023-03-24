@@ -6,6 +6,7 @@ pxeserver_packages:
   - rsync
   - shim-signed
   - syslinux
+  - nfs-kernel-server
 
 pxeserver_services:
   - rpcbind
