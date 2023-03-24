@@ -10,7 +10,7 @@
 - name: Install packages
   package:
     name: "{{ item }}"
-    state: installed
+    state: latest
   with_items: "{{ pxeserver_packages }}"
   tags: pxeserver
 
