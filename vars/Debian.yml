@@ -1,0 +1,18 @@
+# roles/pxeserver/vars/main.yml
+---
+
+pxeserver_packages:
+  - libnfs-utils
+  - rsync
+  - shim-signed
+  - syslinux
+
+pxeserver_services:
+  - rpcbind
+  - nfs-kernel-server
+
+pxeserver_files:
+  - /boot/efi/EFI/BOOT/BOOTX64.CSV
+  - /usr/lib/syslinux/memdisk
+  - /usr/lib/syslinux/modules/efi64/menu.c32
+  - /usr/lib/PXELINUX/pxelinux.0
