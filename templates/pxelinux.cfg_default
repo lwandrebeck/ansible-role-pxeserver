@@ -9,8 +9,8 @@ LABEL {{ loop.index }}
 MENU DEFAULT
 {% endif %}
 MENU LABEL ^{{ loop.index }}) {{ image.label }}
-KERNEL memdisk
-APPEND iso initrd={{ image.name }}/{{ image.iso }} raw
+KERNEL {{ image.kernel_url }}
+APPEND initrd={{ image.initrd_url }}
 {% endfor %}
 
 LABEL {{ pxeserver_images|length + 1 }}
