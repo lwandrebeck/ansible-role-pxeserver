@@ -13,7 +13,6 @@ pxeserver_services:
   - nfs-server
 
 pxeserver_files:
-  - /boot/efi/EFI/debian/BOOTX64.CSV
   - /usr/lib/syslinux/memdisk
   - /usr/lib/syslinux/modules/efi64/menu.c32
   - /usr/lib/PXELINUX/pxelinux.0
