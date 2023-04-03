@@ -15,4 +15,4 @@ APPEND initrd={{ image.initrd_url }}
 
 LABEL {{ pxeserver_images|length + 1 }}
 MENU LABEL ^{{ pxeserver_images|length + 1 }}) Boot from local drive
-LOCALBOOT
+LOCALBOOT 0
